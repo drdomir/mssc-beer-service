@@ -1,12 +1,13 @@
-package drdomir.springframework.msscbeerservice.controller;
+package drdomir.springframework.msscbeerservice.web.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import drdomir.springframework.msscbeerservice.web.controler.BeerController;
+import drdomir.springframework.msscbeerservice.web.model.BeerDto;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import web.model.BeerDto;
 
 import java.util.UUID;
 

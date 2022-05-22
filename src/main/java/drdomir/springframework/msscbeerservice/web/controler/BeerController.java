@@ -1,9 +1,9 @@
-package drdomir.springframework.msscbeerservice.controller;
+package drdomir.springframework.msscbeerservice.web.controler;
 
+import drdomir.springframework.msscbeerservice.web.model.BeerDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import web.model.BeerDto;
 
 import java.util.UUID;
 
