@@ -3,6 +3,7 @@ package drdomir.springframework.msscbeerservice.bootstrap;
 import drdomir.springframework.msscbeerservice.domain.Beer;
 import drdomir.springframework.msscbeerservice.repositories.BeerRepository;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.SpringVersion;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
@@ -42,6 +43,8 @@ public class BeerLoader implements CommandLineRunner {
                     .build());
 
         }
+
+        System.out.println("spring version: " + SpringVersion.getVersion());
 
     }
 }

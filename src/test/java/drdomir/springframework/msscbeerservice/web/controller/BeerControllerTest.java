@@ -46,8 +46,8 @@ class BeerControllerTest {
         String beerDtoJson = objectMapper.writeValueAsString(beerDto);
 
         mockMvc.perform(put("/api/v1/beer/" + UUID.randomUUID().toString())
-        .contentType(MediaType.APPLICATION_JSON)
-        .content(beerDtoJson))
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(beerDtoJson))
                 .andExpect(status().isNoContent());
     }
 }
